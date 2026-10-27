@@ -20,20 +20,20 @@
 
 <div class="page-head">
   <p class="label">Projects</p>
-  <h1>Selected work</h1>
-  <p>One tool from my Scotiabank co-op and two projects I built on my own: a market data pipeline and a full-stack scheduling app.</p>
+  <h1>Projects</h1>
+  <p>Two things I built on my own and one tool from my co-op at Scotiabank.</p>
 </div>
 
 <article class="project">
   <div>
     <p class="label">Personal project</p>
     <h2>Financial Market Intelligence Dashboard</h2>
-    <p class="desc">A pipeline that takes 2.9 million daily S&amp;P 500 price records, calculates market KPIs, and produces a four-page dashboard plus plain-language summaries written by an LLM.</p>
+    <p class="desc">Following 500 stocks by hand isn't realistic. This pipeline loads daily S&amp;P 500 prices, calculates market indicators and summarizes what changed in plain language.</p>
     <dl class="facts">
-      <div><dt>Tools &amp; methods</dt><dd>SQL Server, Python (Pandas), matplotlib, OpenAI API, pytest, Lucidchart, ELT design</dd></div>
-      <div><dt>Skills</dt><dd>SQL, Python, data modeling, KPI engineering, data validation, LLM automation</dd></div>
-      <div><dt>My role</dt><dd>Built it alone: designed the SQL Server schema, wrote the pipeline, defined the KPIs and produced the reports</dd></div>
-      <div><dt>Outcome</dt><dd>Five KPIs (daily return, rolling volatility, volume change, moving-average crossover, abnormal volume alerts), each checked to match between Python and SQL. The LLM step turns them into short summaries a non-technical reader can follow.</dd></div>
+      <div><dt>Tools &amp; methods</dt><dd>SQL Server, Python (Pandas), matplotlib, OpenAI API, pytest, Lucidchart</dd></div>
+      <div><dt>Skills</dt><dd>SQL, data modeling, ELT pipelines, testing, LLM integration</dd></div>
+      <div><dt>My role</dt><dd>Solo project. I designed the database, wrote the pipeline and tests, and built the reports.</dd></div>
+      <div><dt>Outcome</dt><dd>Runs on 2.9M+ price records for 503 companies across 11 sectors. It produces five indicators (daily return, rolling volatility, volume change, moving-average crossover and abnormal volume), each tested to give the same result in Python and SQL, plus a four-page PDF dashboard and a short written summary.</dd></div>
     </dl>
     <a class="repo" href="https://github.com/Chun-Yen087/financial-market-intelligence-dashboard">View on GitHub →</a>
   </div>
@@ -61,12 +61,12 @@
   <div>
     <p class="label">Scotiabank co-op · internal tool</p>
     <h2>TWA Intake Tracker</h2>
-    <p class="desc">Part of my job is answering questions from Total Wealth Analyzer users. To see what those requests looked like over time, I built a Power BI tracker of monthly volume in the TWA support inbox.</p>
+    <p class="desc">I answer many of the questions that come into the Total Wealth Analyzer support inbox. To see how that demand changes from month to month, I built a small Power BI tracker on top of the inbox.</p>
     <dl class="facts">
-      <div><dt>Tools &amp; methods</dt><dd>Alteryx, Power Query, Power BI; Salesforce data via Workbench and SOQL</dd></div>
-      <div><dt>Skills</dt><dd>ETL, dashboard design, user support, data quality checks</dd></div>
-      <div><dt>My role</dt><dd>Built it end to end, from the Alteryx workflow to the Power BI report</dd></div>
-      <div><dt>Outcome</dt><dd>The team can see support volume by month in one view instead of reading back through the inbox</dd></div>
+      <div><dt>Tools &amp; methods</dt><dd>Alteryx, Power Query, Power BI</dd></div>
+      <div><dt>Skills</dt><dd>Data preparation, ETL, dashboard design</dd></div>
+      <div><dt>My role</dt><dd>Built it myself, from the Alteryx workflow that prepares the data to the Power BI report.</dd></div>
+      <div><dt>Outcome</dt><dd>The team can see support volume by month in one place, instead of scrolling back through emails.</dd></div>
     </dl>
     <p class="note">Internal tool. The diagram shows the workflow only; no bank data is shown.</p>
   </div>
@@ -87,12 +87,12 @@
   <div>
     <p class="label">Personal project</p>
     <h2>Matcha Tokyo Staff Scheduler</h2>
-    <p class="desc">A staff scheduling app for a retail store. Managers build and publish weekly schedules; employees set their availability, request time off and ask to swap shifts, which a manager approves.</p>
+    <p class="desc">Building a weekly schedule for a retail store means balancing availability, time off and labour rules. In this app, managers build and publish schedules, and staff handle their availability, time-off requests and shift swaps.</p>
     <dl class="facts">
       <div><dt>Tools &amp; methods</dt><dd>React 18, TypeScript, Tailwind CSS, Vite, Node.js, Express, PostgreSQL 16, Prisma ORM, JWT auth, Zod, Vitest, Docker Compose</dd></div>
-      <div><dt>Skills</dt><dd>Full-stack development, relational data modeling, REST API design, role-based access control, automated testing, AI-assisted development</dd></div>
-      <div><dt>My role</dt><dd>Built the full stack with Claude as an AI pair programmer. I defined the requirements and scheduling rules, chose the architecture, and reviewed and tested the code.</dd></div>
-      <div><dt>Outcome</dt><dd>Every shift assignment is checked against 8 rules, including overlaps, rest time, maximum hours, availability, time off and role fit. Each conflict is flagged as a hard block or a warning, key actions go to an audit log, and the app starts with one Docker command.</dd></div>
+      <div><dt>Skills</dt><dd>Full-stack development, data modeling, REST APIs, authentication and role-based access, testing, AI-assisted development</dd></div>
+      <div><dt>My role</dt><dd>I built this with Claude as a pair programmer. I decided what the app needed to do and how the scheduling rules should work, chose the stack and structure, and reviewed and tested the code we wrote.</dd></div>
+      <div><dt>Outcome</dt><dd>Each shift assignment is checked against 8 rules, such as overlapping shifts, minimum rest, maximum hours and time off. Problems show up as a hard block or a warning before a schedule goes out. The app has 11 data models, 41 unit tests and an audit log, and the whole stack starts with one Docker command.</dd></div>
     </dl>
     <a class="repo" href="https://github.com/Chun-Yen087/retail-production-scheduling-app">View on GitHub →</a>
   </div>
