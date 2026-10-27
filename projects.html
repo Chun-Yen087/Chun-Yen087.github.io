@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Projects · ChunYen Wu</title>
+<meta name="description" content="ChunYen Wu, Computer Science co-op student at York University. Data and BI analytics in financial services.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='30' fill='%236E7F6A'/%3E%3Ctext x='32' y='42' font-size='28' text-anchor='middle' fill='%23F3EFE8' font-family='Georgia'%3EC%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500&family=Manrope:wght@400;500;600&family=IBM+Plex+Mono:wght@400&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top"><div class="wrap">
+<a class="name" href="index.html">ChunYen Wu</a>
+<nav aria-label="Main"><ul><li><a href="about.html">About</a></li><li><a href="resume.html">Resume</a></li><li><a href="projects.html" aria-current="page">Projects</a></li><li><a href="contact.html">Contact</a></li></ul></nav>
+</div></header>
+<main class="page"><div class="wrap">
+
+<div class="page-head">
+  <p class="label">Projects</p>
+  <h1>Selected work</h1>
+  <p>A personal analytics pipeline, an internal Scotiabank tool and a team software build.</p>
+</div>
+
+<article class="project">
+  <div>
+    <p class="label">Personal project</p>
+    <h2>Financial Market Intelligence Dashboard</h2>
+    <p class="desc">An end-to-end pipeline that turns daily S&amp;P 500 prices into validated KPIs, a four-page dashboard and AI-written executive summaries.</p>
+    <dl class="facts">
+      <div><dt>Tools &amp; methods</dt><dd>SQL Server, Python (Pandas), matplotlib, OpenAI API, pytest, Lucidchart, ELT design</dd></div>
+      <div><dt>Skills</dt><dd>SQL, Python, data modeling, KPI engineering, data validation, LLM automation</dd></div>
+      <div><dt>My role</dt><dd>Sole developer: schema, pipeline, KPIs and reporting layer</dd></div>
+      <div><dt>Outcome</dt><dd>KPIs (daily return, rolling volatility, volume change, moving-average crossover, abnormal volume) match between Python and SQL; summaries written for non-technical readers</dd></div>
+    </dl>
+    <a class="repo" href="https://github.com/Chun-Yen087/financial-market-intelligence-dashboard">View on GitHub →</a>
+  </div>
+  <figure>
+    <div class="kpis">
+      <div class="kpi"><b>2.9M+</b><span>price records</span></div>
+      <div class="kpi"><b>503</b><span>companies</span></div>
+      <div class="kpi"><b>11</b><span>sectors</span></div>
+    </div>
+    <svg viewBox="0 0 440 230" role="img" aria-label="Pipeline from SQL Server to Pandas to KPI tables, feeding a dashboard and an LLM summary">
+      <defs><marker id="ah1" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="dg-head"/></marker></defs>
+      <rect class="dg-box blue" x="10" y="10" width="120" height="56" rx="10"/><text class="dg-t" x="70" y="35" text-anchor="middle">SQL Server</text><text class="dg-s" x="70" y="52" text-anchor="middle">extract</text>
+      <rect class="dg-box blue" x="160" y="10" width="120" height="56" rx="10"/><text class="dg-t" x="220" y="35" text-anchor="middle">Pandas</text><text class="dg-s" x="220" y="52" text-anchor="middle">transform</text>
+      <rect class="dg-box hi" x="310" y="10" width="120" height="56" rx="10"/><text class="dg-t" x="370" y="35" text-anchor="middle">KPI tables</text><text class="dg-s" x="370" y="52" text-anchor="middle">tested</text>
+      <path class="dg-a" d="M130 38 H158" marker-end="url(#ah1)"/><path class="dg-a" d="M280 38 H308" marker-end="url(#ah1)"/>
+      <path class="dg-a" d="M370 66 V100 H150 V140" marker-end="url(#ah1)"/><path class="dg-a" d="M370 100 V140" marker-end="url(#ah1)"/>
+      <rect class="dg-box" x="60" y="142" width="180" height="62" rx="10"/><text class="dg-t" x="150" y="168" text-anchor="middle">Dashboard</text><text class="dg-s" x="150" y="186" text-anchor="middle">4-page PDF</text>
+      <rect class="dg-box" x="280" y="142" width="150" height="62" rx="10"/><text class="dg-t" x="355" y="168" text-anchor="middle">LLM summary</text><text class="dg-s" x="355" y="186" text-anchor="middle">Markdown</text>
+    </svg>
+    <figcaption>How the data moves through the pipeline.</figcaption>
+  </figure>
+</article>
+
+<article class="project">
+  <div>
+    <p class="label">Scotiabank co-op</p>
+    <h2>TWA Intake Tracker</h2>
+    <p class="desc">A Power BI view of monthly request volume in the Total Wealth Analyzer support inbox, built while supporting TWA users across Canadian Wealth Management.</p>
+    <dl class="facts">
+      <div><dt>Tools &amp; methods</dt><dd>Alteryx, Power Query, Power BI; Salesforce data via Workbench and SOQL</dd></div>
+      <div><dt>Skills</dt><dd>ETL, dashboard design, user support, data quality checks</dd></div>
+      <div><dt>My role</dt><dd>Built the tracker end to end, alongside weekly and monthly TWA refreshes and user support</dd></div>
+      <div><dt>Outcome</dt><dd>Monthly intake is visible in one view instead of being read message by message</dd></div>
+    </dl>
+    <p class="note">Internal tool. The diagram shows the workflow only; no bank data is shown.</p>
+  </div>
+  <figure>
+    <svg viewBox="0 0 440 290" role="img" aria-label="Support inbox to Alteryx to Power Query to Power BI tracker">
+      <defs><marker id="ah2" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="dg-head"/></marker></defs>
+      <rect class="dg-box blue" x="110" y="10" width="220" height="50" rx="10"/><text class="dg-t" x="220" y="32" text-anchor="middle">TWA support inbox</text><text class="dg-s" x="220" y="48" text-anchor="middle">user requests</text>
+      <rect class="dg-box" x="110" y="84" width="220" height="50" rx="10"/><text class="dg-t" x="220" y="106" text-anchor="middle">Alteryx</text><text class="dg-s" x="220" y="122" text-anchor="middle">clean · categorize</text>
+      <rect class="dg-box" x="110" y="158" width="220" height="50" rx="10"/><text class="dg-t" x="220" y="180" text-anchor="middle">Power Query</text><text class="dg-s" x="220" y="196" text-anchor="middle">monthly table</text>
+      <rect class="dg-box hi" x="110" y="232" width="220" height="50" rx="10"/><text class="dg-t" x="220" y="254" text-anchor="middle">Power BI tracker</text><text class="dg-s" x="220" y="270" text-anchor="middle">volume by month</text>
+      <path class="dg-a" d="M220 60 V82" marker-end="url(#ah2)"/><path class="dg-a" d="M220 134 V156" marker-end="url(#ah2)"/><path class="dg-a" d="M220 208 V230" marker-end="url(#ah2)"/>
+    </svg>
+    <figcaption>From inbox request to monthly trend.</figcaption>
+  </figure>
+</article>
+
+<article class="project">
+  <div>
+    <p class="label">Team project · EECS 3311</p>
+    <h2>Service Booking &amp; Consulting Platform</h2>
+    <p class="desc">A full-stack platform where clients book and pay for consulting sessions, consultants manage their schedules and admins oversee the system.</p>
+    <dl class="facts">
+      <div><dt>Tools &amp; methods</dt><dd>Java, Spring Boot, JPA, PostgreSQL, Docker, nginx, JavaScript, UML, Agile</dd></div>
+      <div><dt>Skills</dt><dd>Backend design, design patterns, containerization, front-end routing, Git</dd></div>
+      <div><dt>My role</dt><dd>Backend user domain (three roles, Observer notifications, singleton PolicyManager) and the six-module single-page front end</dd></div>
+      <div><dt>Outcome</dt><dd>Runs as a three-container Docker stack, with UML use case, class and sequence diagrams</dd></div>
+    </dl>
+    <a class="repo" href="https://github.com/Vlad-Cojocaru/TheDroidsEECS3311Project">View on GitHub →</a>
+  </div>
+  <figure>
+    <svg viewBox="0 0 440 260" role="img" aria-label="Browser app to nginx, Spring Boot and PostgreSQL in three Docker containers">
+      <defs><marker id="ah3" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="dg-head"/></marker></defs>
+      <rect class="dg-box blue" x="130" y="8" width="180" height="50" rx="10"/><text class="dg-t" x="220" y="30" text-anchor="middle">Browser app</text><text class="dg-s" x="220" y="46" text-anchor="middle">6 modules · role routing</text>
+      <rect class="dg-frame" x="10" y="80" width="420" height="170" rx="14"/>
+      <text class="dg-s" x="24" y="100">Docker · 3 containers</text>
+      <rect class="dg-box" x="30" y="120" width="120" height="56" rx="10"/><text class="dg-t" x="90" y="145" text-anchor="middle">nginx</text><text class="dg-s" x="90" y="162" text-anchor="middle">proxy</text>
+      <rect class="dg-box hi" x="170" y="120" width="120" height="56" rx="10"/><text class="dg-t" x="230" y="145" text-anchor="middle">Spring Boot</text><text class="dg-s" x="230" y="162" text-anchor="middle">Java · JPA</text>
+      <rect class="dg-box" x="310" y="120" width="110" height="56" rx="10"/><text class="dg-t" x="365" y="145" text-anchor="middle">PostgreSQL</text><text class="dg-s" x="365" y="162" text-anchor="middle">data</text>
+      <text class="dg-s" x="230" y="208" text-anchor="middle">Client · Consultant · Admin</text>
+      <text class="dg-s" x="230" y="226" text-anchor="middle">Observer · PolicyManager</text>
+      <path class="dg-a" d="M220 58 V80 H90 V118" marker-end="url(#ah3)"/><path class="dg-a" d="M150 148 H168" marker-end="url(#ah3)"/><path class="dg-a" d="M290 148 H308" marker-end="url(#ah3)"/>
+    </svg>
+    <figcaption>Deployment architecture.</figcaption>
+  </figure>
+</article>
+
+</div></main>
+<footer><div class="wrap"><span>© 2026 ChunYen Wu</span><span>chunyenwu87@gmail.com</span></div></footer>
+</body>
+</html>
