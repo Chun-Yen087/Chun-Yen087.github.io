@@ -21,19 +21,19 @@
 <div class="page-head">
   <p class="label">Projects</p>
   <h1>Selected work</h1>
-  <p>A market analytics pipeline, an internal Scotiabank tool and a full-stack scheduling app.</p>
+  <p>One tool from my Scotiabank co-op and two projects I built on my own: a market data pipeline and a full-stack scheduling app.</p>
 </div>
 
 <article class="project">
   <div>
     <p class="label">Personal project</p>
     <h2>Financial Market Intelligence Dashboard</h2>
-    <p class="desc">An end-to-end pipeline that turns daily S&amp;P 500 prices into validated KPIs, a four-page dashboard and AI-written executive summaries.</p>
+    <p class="desc">A pipeline that takes 2.9 million daily S&amp;P 500 price records, calculates market KPIs, and produces a four-page dashboard plus plain-language summaries written by an LLM.</p>
     <dl class="facts">
       <div><dt>Tools &amp; methods</dt><dd>SQL Server, Python (Pandas), matplotlib, OpenAI API, pytest, Lucidchart, ELT design</dd></div>
       <div><dt>Skills</dt><dd>SQL, Python, data modeling, KPI engineering, data validation, LLM automation</dd></div>
-      <div><dt>My role</dt><dd>Sole developer: schema, pipeline, KPIs and reporting layer</dd></div>
-      <div><dt>Outcome</dt><dd>KPIs (daily return, rolling volatility, volume change, moving-average crossover, abnormal volume) match between Python and SQL; summaries written for non-technical readers</dd></div>
+      <div><dt>My role</dt><dd>Built it alone: designed the SQL Server schema, wrote the pipeline, defined the KPIs and produced the reports</dd></div>
+      <div><dt>Outcome</dt><dd>Five KPIs (daily return, rolling volatility, volume change, moving-average crossover, abnormal volume alerts), each checked to match between Python and SQL. The LLM step turns them into short summaries a non-technical reader can follow.</dd></div>
     </dl>
     <a class="repo" href="https://github.com/Chun-Yen087/financial-market-intelligence-dashboard">View on GitHub →</a>
   </div>
@@ -59,14 +59,14 @@
 
 <article class="project">
   <div>
-    <p class="label">Scotiabank co-op</p>
+    <p class="label">Scotiabank co-op · internal tool</p>
     <h2>TWA Intake Tracker</h2>
-    <p class="desc">A Power BI view of monthly request volume in the Total Wealth Analyzer support inbox, built while supporting TWA users across Canadian Wealth Management.</p>
+    <p class="desc">Part of my job is answering questions from Total Wealth Analyzer users. To see what those requests looked like over time, I built a Power BI tracker of monthly volume in the TWA support inbox.</p>
     <dl class="facts">
       <div><dt>Tools &amp; methods</dt><dd>Alteryx, Power Query, Power BI; Salesforce data via Workbench and SOQL</dd></div>
       <div><dt>Skills</dt><dd>ETL, dashboard design, user support, data quality checks</dd></div>
-      <div><dt>My role</dt><dd>Built the tracker end to end, alongside weekly and monthly TWA refreshes and user support</dd></div>
-      <div><dt>Outcome</dt><dd>Monthly intake is visible in one view instead of being read message by message</dd></div>
+      <div><dt>My role</dt><dd>Built it end to end, from the Alteryx workflow to the Power BI report</dd></div>
+      <div><dt>Outcome</dt><dd>The team can see support volume by month in one view instead of reading back through the inbox</dd></div>
     </dl>
     <p class="note">Internal tool. The diagram shows the workflow only; no bank data is shown.</p>
   </div>
@@ -87,12 +87,12 @@
   <div>
     <p class="label">Personal project</p>
     <h2>Matcha Tokyo Staff Scheduler</h2>
-    <p class="desc">A full-stack scheduling app for a retail store. Managers build and publish weekly schedules, staff set availability and request time off, and shift swaps go to a manager for approval.</p>
+    <p class="desc">A staff scheduling app for a retail store. Managers build and publish weekly schedules; employees set their availability, request time off and ask to swap shifts, which a manager approves.</p>
     <dl class="facts">
       <div><dt>Tools &amp; methods</dt><dd>React 18, TypeScript, Tailwind CSS, Vite, Node.js, Express, PostgreSQL 16, Prisma ORM, JWT auth, Zod, Vitest, Docker Compose</dd></div>
       <div><dt>Skills</dt><dd>Full-stack development, relational data modeling, REST API design, role-based access control, automated testing, AI-assisted development</dd></div>
-      <div><dt>My role</dt><dd>Designed and built the full stack with Claude as an AI pair programmer. I set the requirements and scheduling rules, directed the architecture, and reviewed and tested the database schema, API modules, conflict engine and React interface.</dd></div>
-      <div><dt>Outcome</dt><dd>A conflict engine checks every assignment against 8 rules (overlaps, rest time, max hours, availability, time off, role fit) and flags each as a hard block or a warning. Key actions are written to an audit log, and the whole app runs with one Docker command.</dd></div>
+      <div><dt>My role</dt><dd>Built the full stack with Claude as an AI pair programmer. I defined the requirements and scheduling rules, chose the architecture, and reviewed and tested the code.</dd></div>
+      <div><dt>Outcome</dt><dd>Every shift assignment is checked against 8 rules, including overlaps, rest time, maximum hours, availability, time off and role fit. Each conflict is flagged as a hard block or a warning, key actions go to an audit log, and the app starts with one Docker command.</dd></div>
     </dl>
     <a class="repo" href="https://github.com/Chun-Yen087/retail-production-scheduling-app">View on GitHub →</a>
   </div>
