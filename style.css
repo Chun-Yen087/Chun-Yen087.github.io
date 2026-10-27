@@ -130,3 +130,12 @@ footer .wrap { display: flex; justify-content: space-between; gap: 12px; flex-wr
 .focus { list-style: none; margin: 0; padding: 0; display: grid; gap: 14px; }
 .focus li { display: grid; gap: 2px; }
 .focus span { font-size: .9rem; color: var(--accent); }
+
+/* About header with photo */
+.about-head { display: grid; grid-template-columns: minmax(0, 220px) minmax(0, 1fr); gap: 48px; align-items: end; margin-bottom: 56px; }
+.about-head img { display: block; width: 100%; height: auto; aspect-ratio: 4 / 5; object-fit: cover; border-radius: 120px 120px 8px 8px; filter: saturate(.8); }
+.about-head .page-head { margin-bottom: 0; }
+@media (max-width: 760px) { .about-head { grid-template-columns: minmax(0, 1fr); gap: 24px; } .about-head img { max-width: 180px; } }
+
+/* Video page */
+.vid { display: block; width: 100%; max-width: 100%; aspect-ratio: 16 / 9; height: auto; background: #000; border-radius: var(--radius); }
