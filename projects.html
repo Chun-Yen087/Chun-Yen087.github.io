@@ -21,7 +21,7 @@
 <div class="page-head">
   <p class="label">Projects</p>
   <h1>Selected work</h1>
-  <p>A personal analytics pipeline, an internal Scotiabank tool and a team software build.</p>
+  <p>A market analytics pipeline, an internal Scotiabank tool and a full-stack scheduling app.</p>
 </div>
 
 <article class="project">
@@ -85,31 +85,35 @@
 
 <article class="project">
   <div>
-    <p class="label">Team project · EECS 3311</p>
-    <h2>Service Booking &amp; Consulting Platform</h2>
-    <p class="desc">A full-stack platform where clients book and pay for consulting sessions, consultants manage their schedules and admins oversee the system.</p>
+    <p class="label">Personal project</p>
+    <h2>Matcha Tokyo Staff Scheduler</h2>
+    <p class="desc">A full-stack scheduling app for a retail store. Managers build and publish weekly schedules, staff set availability and request time off, and shift swaps go to a manager for approval.</p>
     <dl class="facts">
-      <div><dt>Tools &amp; methods</dt><dd>Java, Spring Boot, JPA, PostgreSQL, Docker, nginx, JavaScript, UML, Agile</dd></div>
-      <div><dt>Skills</dt><dd>Backend design, design patterns, containerization, front-end routing, Git</dd></div>
-      <div><dt>My role</dt><dd>Backend user domain (three roles, Observer notifications, singleton PolicyManager) and the six-module single-page front end</dd></div>
-      <div><dt>Outcome</dt><dd>Runs as a three-container Docker stack, with UML use case, class and sequence diagrams</dd></div>
+      <div><dt>Tools &amp; methods</dt><dd>React 18, TypeScript, Tailwind CSS, Vite, Node.js, Express, PostgreSQL 16, Prisma ORM, JWT auth, Zod, Vitest, Docker Compose</dd></div>
+      <div><dt>Skills</dt><dd>Full-stack development, relational data modeling, REST API design, role-based access control, automated testing</dd></div>
+      <div><dt>My role</dt><dd>Designed and built the full stack: database schema, API modules, conflict-detection engine and the React interface</dd></div>
+      <div><dt>Outcome</dt><dd>A conflict engine checks every assignment against 8 rules (overlaps, rest time, max hours, availability, time off, role fit) and flags each as a hard block or a warning. Key actions are written to an audit log, and the whole app runs with one Docker command.</dd></div>
     </dl>
-    <a class="repo" href="https://github.com/Vlad-Cojocaru/TheDroidsEECS3311Project">View on GitHub →</a>
+    <a class="repo" href="https://github.com/Chun-Yen087/retail-production-scheduling-app">View on GitHub →</a>
   </div>
   <figure>
-    <svg viewBox="0 0 440 260" role="img" aria-label="Browser app to nginx, Spring Boot and PostgreSQL in three Docker containers">
+    <div class="kpis">
+      <div class="kpi"><b>11</b><span>data models</span></div>
+      <div class="kpi"><b>8</b><span>scheduling rules</span></div>
+      <div class="kpi"><b>41</b><span>unit tests</span></div>
+    </div>
+    <svg viewBox="0 0 440 300" role="img" aria-label="React app calls the Express API, which checks auth and roles, runs the conflict engine, and stores data in PostgreSQL through Prisma">
       <defs><marker id="ah3" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="dg-head"/></marker></defs>
-      <rect class="dg-box blue" x="130" y="8" width="180" height="50" rx="10"/><text class="dg-t" x="220" y="30" text-anchor="middle">Browser app</text><text class="dg-s" x="220" y="46" text-anchor="middle">6 modules · role routing</text>
-      <rect class="dg-frame" x="10" y="80" width="420" height="170" rx="14"/>
-      <text class="dg-s" x="24" y="100">Docker · 3 containers</text>
-      <rect class="dg-box" x="30" y="120" width="120" height="56" rx="10"/><text class="dg-t" x="90" y="145" text-anchor="middle">nginx</text><text class="dg-s" x="90" y="162" text-anchor="middle">proxy</text>
-      <rect class="dg-box hi" x="170" y="120" width="120" height="56" rx="10"/><text class="dg-t" x="230" y="145" text-anchor="middle">Spring Boot</text><text class="dg-s" x="230" y="162" text-anchor="middle">Java · JPA</text>
-      <rect class="dg-box" x="310" y="120" width="110" height="56" rx="10"/><text class="dg-t" x="365" y="145" text-anchor="middle">PostgreSQL</text><text class="dg-s" x="365" y="162" text-anchor="middle">data</text>
-      <text class="dg-s" x="230" y="208" text-anchor="middle">Client · Consultant · Admin</text>
-      <text class="dg-s" x="230" y="226" text-anchor="middle">Observer · PolicyManager</text>
-      <path class="dg-a" d="M220 58 V80 H90 V118" marker-end="url(#ah3)"/><path class="dg-a" d="M150 148 H168" marker-end="url(#ah3)"/><path class="dg-a" d="M290 148 H308" marker-end="url(#ah3)"/>
+      <rect class="dg-box blue" x="120" y="8" width="200" height="50" rx="10"/><text class="dg-t" x="220" y="30" text-anchor="middle">React app</text><text class="dg-s" x="220" y="46" text-anchor="middle">manager · employee views</text>
+      <rect class="dg-frame" x="10" y="78" width="420" height="140" rx="14"/>
+      <text class="dg-s" x="24" y="98">Express API</text>
+      <rect class="dg-box" x="30" y="112" width="180" height="56" rx="10"/><text class="dg-t" x="120" y="137" text-anchor="middle">JWT + role check</text><text class="dg-s" x="120" y="154" text-anchor="middle">Zod validation</text>
+      <rect class="dg-box hi" x="230" y="112" width="180" height="56" rx="10"/><text class="dg-t" x="320" y="137" text-anchor="middle">Conflict engine</text><text class="dg-s" x="320" y="154" text-anchor="middle">hard · soft · info</text>
+      <text class="dg-s" x="220" y="200" text-anchor="middle">schedules · shifts · swaps · time off · audit log</text>
+      <rect class="dg-box" x="120" y="238" width="200" height="54" rx="10"/><text class="dg-t" x="220" y="262" text-anchor="middle">PostgreSQL</text><text class="dg-s" x="220" y="279" text-anchor="middle">via Prisma ORM</text>
+      <path class="dg-a" d="M220 58 V78 H120 V110" marker-end="url(#ah3)"/><path class="dg-a" d="M210 140 H228" marker-end="url(#ah3)"/><path class="dg-a" d="M220 218 V236" marker-end="url(#ah3)"/>
     </svg>
-    <figcaption>Deployment architecture.</figcaption>
+    <figcaption>How a shift assignment is checked and saved.</figcaption>
   </figure>
 </article>
 
