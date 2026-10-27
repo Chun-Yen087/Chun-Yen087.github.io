@@ -120,3 +120,8 @@ footer .wrap { display: flex; justify-content: space-between; gap: 12px; flex-wr
   .skills { grid-template-columns: minmax(0, 1fr); }
   main.page { padding-block: 44px 60px; }
 }
+
+/* Resume viewer */
+.resume-actions { display: flex; align-items: center; gap: 20px; flex-wrap: wrap; margin-top: 20px; }
+.pdf { display: block; width: 100%; height: 80vh; min-height: 520px; border: 1px solid var(--line); border-radius: var(--radius); background: var(--surface); }
+@media (max-width: 760px) { .pdf { height: 70vh; min-height: 0; } }
